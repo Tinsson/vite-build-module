@@ -1,0 +1,1 @@
+(function(e){typeof define=="function"&&define.amd?define(e):e()})(function(){"use strict";const e=t=>String(t),i="hello world",r=[1,2,3],s={age:20,name:"TinssonTai"};(()=>{console.log(i),console.log(s),console.log(...r.map(t=>e(t)))})()});

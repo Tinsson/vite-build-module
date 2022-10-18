@@ -1,0 +1,32 @@
+{
+  "name": "vite-build-module",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm clear && tsc && run-p build:*",
+    "build:iife": "vite build -f iife",
+    "build:cjs": "vite build -f cjs",
+    "build:amd": "vite build -f amd",
+    "build:umd": "vite build -f umd",
+    "build:esm": "vite build -f es",
+    "preview": "vite preview",
+    "clear": "rimraf module"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.17",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "commander": "^9.4.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
